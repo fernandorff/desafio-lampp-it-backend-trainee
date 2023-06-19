@@ -1,5 +1,5 @@
-import Paginacao from "../../models/dtos/Paginacao";
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import Paginacao from "../../models/dtos/Paginacao";
 
 const initialState: Paginacao = {
   size: 5,

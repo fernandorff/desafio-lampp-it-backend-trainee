@@ -1,13 +1,13 @@
+import { Button, Label, Modal, Select, TextInput } from "flowbite-react";
+import { useState } from "react";
+import { HiOutlineUserAdd } from "react-icons/hi";
+import { useDispatch, useSelector } from "react-redux";
 import useFuncionarioApi from "../api/useFuncionarioApi";
 import mascaraCpf from "../helper/mascaraCpf";
 import Cargo from "../models/dtos/Cargo";
 import IncluirFuncionarioRequest from "../models/requests/IncluirFuncionarioRequest";
 import { RootState } from "../store";
 import { setFuncionarios } from "../store/reducers/funcionariosSlice";
-import { Modal, Button, Label, TextInput, Select } from "flowbite-react";
-import React, { useState } from "react";
-import { HiOutlineUserAdd } from "react-icons/hi";
-import { useDispatch, useSelector } from "react-redux";
 
 const emptyFormInput: IncluirFuncionarioRequest = {
   nome: "",

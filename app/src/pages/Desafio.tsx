@@ -1,12 +1,11 @@
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
 import useCargoApi from "../api/useCargoApi";
 import useFuncionarioApi from "../api/useFuncionarioApi";
-import CreateUserModal from "../components/CreateUserModal";
 import TabelaDeFuncionarios from "../components/TabelaDeFuncionarios";
 import Cargo from "../models/dtos/Cargo";
 import { setCargos } from "../store/reducers/cargosSlice";
 import { setFuncionarios } from "../store/reducers/funcionariosSlice";
-import { useState, useEffect } from "react";
-import { useDispatch } from "react-redux";
 
 export default function Desafio() {
   const { listarCargos } = useCargoApi();

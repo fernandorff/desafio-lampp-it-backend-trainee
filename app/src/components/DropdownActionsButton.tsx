@@ -1,29 +1,21 @@
+import {
+  Button,
+  Dropdown,
+  Label,
+  Modal,
+  Select,
+  TextInput,
+} from "flowbite-react";
+import { useState } from "react";
+import { HiDotsVertical, HiOutlineExclamationCircle } from "react-icons/hi";
+import { useDispatch, useSelector } from "react-redux";
 import useFuncionarioApi from "../api/useFuncionarioApi";
 import mascaraCpf from "../helper/mascaraCpf";
 import Cargo from "../models/dtos/Cargo";
 import Funcionario from "../models/dtos/Funcionario";
 import AlterarFuncionarioRequest from "../models/requests/AlterarFuncionarioRequest";
-import IncluirFuncionarioRequest from "../models/requests/IncluirFuncionarioRequest";
 import { RootState } from "../store";
 import { setFuncionarios } from "../store/reducers/funcionariosSlice";
-import {
-  Dropdown,
-  Avatar,
-  Modal,
-  Button,
-  Label,
-  TextInput,
-  Checkbox,
-  Select,
-} from "flowbite-react";
-import { useState, useEffect } from "react";
-import {
-  HiOutlineArrowRight,
-  HiShoppingCart,
-  HiDotsVertical,
-  HiOutlineExclamationCircle,
-} from "react-icons/hi";
-import { useDispatch, useSelector } from "react-redux";
 
 interface Props {
   funcionario: Funcionario;

@@ -1,22 +1,21 @@
-import useFuncionarioApi from "../api/useFuncionarioApi";
-import Paginacao from "../models/dtos/Paginacao";
-import { RootState } from "../store";
-import { setFuncionarios } from "../store/reducers/funcionariosSlice";
-import {
-  setPaginaAtual,
-  setTamanho,
-  setOrdem,
-  setOrdenacaoPor,
-} from "../store/reducers/paginacaoSlice";
 import {
   IconArrowAutofitHeight,
   IconSortAscending,
   IconSortDescending,
 } from "@tabler/icons-react";
 import { Label, Pagination, Radio, Select } from "flowbite-react";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { ArrowDownUp } from "react-bootstrap-icons";
 import { useDispatch, useSelector } from "react-redux";
+import useFuncionarioApi from "../api/useFuncionarioApi";
+import { RootState } from "../store";
+import { setFuncionarios } from "../store/reducers/funcionariosSlice";
+import {
+  setOrdem,
+  setOrdenacaoPor,
+  setPaginaAtual,
+  setTamanho,
+} from "../store/reducers/paginacaoSlice";
 
 export default function PaginacaoTabela() {
   const dispatch = useDispatch();
@@ -86,9 +85,10 @@ export default function PaginacaoTabela() {
           required
           name="cargo"
           sizing={"sm"}
-          onChange={(event) =>
-            dispatch(setTamanho(parseInt(event.target.value)))
-          }
+          onChange={(event) => {
+            dispatch(setTamanho(parseInt(event.target.value)));
+            dispatch(setPaginaAtual(0));
+          }}
           icon={() => (
             <IconArrowAutofitHeight
               strokeWidth={"1"}

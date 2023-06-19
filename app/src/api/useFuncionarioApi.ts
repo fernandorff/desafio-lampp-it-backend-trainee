@@ -1,8 +1,8 @@
+import { useSelector } from "react-redux";
 import AlterarFuncionarioRequest from "../models/requests/AlterarFuncionarioRequest";
 import { RootState } from "../store";
 import IncluirFuncionarioRequest from "./../models/requests/IncluirFuncionarioRequest";
 import axiosInstance from "./_axiosInstance";
-import { useSelector } from "react-redux";
 
 export default function useFuncionarioApi() {
   const path = "/funcionarios";
@@ -42,8 +42,7 @@ export default function useFuncionarioApi() {
     try {
       const response = await axiosInstance.post(`${path}`, request);
       return response.data;
-    } catch (error) {
-    }
+    } catch (error) {}
   }
 
   // PUT methods

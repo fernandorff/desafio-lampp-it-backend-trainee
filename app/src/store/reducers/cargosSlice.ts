@@ -1,5 +1,5 @@
-import Cargo from "../../models/dtos/Cargo";
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import Cargo from "../../models/dtos/Cargo";
 
 const initialState: Cargo[] = [];
 

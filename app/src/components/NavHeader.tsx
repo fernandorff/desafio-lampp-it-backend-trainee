@@ -1,5 +1,4 @@
-import { Button, DarkThemeToggle, Navbar } from "flowbite-react";
-import logoUrl from "https://1000logos.net/wp-content/uploads/2021/04/ACME-logo.png";
+import { DarkThemeToggle, Navbar } from "flowbite-react";
 
 export default function NavHeader() {
   return (

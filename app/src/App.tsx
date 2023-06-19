@@ -1,6 +1,6 @@
+import { Flowbite } from "flowbite-react";
 import NavHeader from "./components/NavHeader";
 import Desafio from "./pages/Desafio";
-import { DarkThemeToggle, Flowbite } from "flowbite-react";
 
 export default function App() {
   return (

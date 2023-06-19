@@ -1,11 +1,11 @@
+import { Table } from "flowbite-react";
+import { useSelector } from "react-redux";
 import mascaraCpf from "../helper/mascaraCpf";
 import Funcionario from "../models/dtos/Funcionario";
 import { RootState } from "../store";
 import CreateUserModal from "./CreateUserModal";
 import DropdownActionsButton from "./DropdownActionsButton";
 import PaginacaoTabela from "./PaginacaoTabela";
-import { Button, Dropdown, Select, Table, Checkbox } from "flowbite-react";
-import { useSelector } from "react-redux";
 
 export default function TabelaDeFuncionarios() {
   const funcionarios = useSelector((state: RootState) => state.funcionarios);

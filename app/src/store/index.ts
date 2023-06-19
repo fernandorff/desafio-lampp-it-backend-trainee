@@ -1,7 +1,7 @@
+import { configureStore } from "@reduxjs/toolkit";
 import cargosSlice from "./reducers/cargosSlice";
 import funcionariosReducer from "./reducers/funcionariosSlice";
 import paginacaoSlice from "./reducers/paginacaoSlice";
-import { configureStore } from "@reduxjs/toolkit";
 
 const store = configureStore({
   reducer: {

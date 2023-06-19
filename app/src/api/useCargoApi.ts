@@ -1,4 +1,3 @@
-import Cargo from "../models/dtos/Cargo";
 import axiosInstance from "./_axiosInstance";
 
 export default function useCargoApi() {
