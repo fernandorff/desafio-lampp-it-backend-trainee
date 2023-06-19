@@ -1,6 +1,6 @@
 import axios, { AxiosInstance } from "axios";
 
-const ApiUrl: string = "https://desafio-lampp-it-backend-trainee.vercel.app/";
+const ApiUrl: string = "https://test-production-3036.up.railway.app/";
 
 const axiosInstance: AxiosInstance = axios.create({
   baseURL: ApiUrl,
