@@ -37,10 +37,8 @@ export default function PaginacaoTabela() {
     fetchFuncionarios();
   }, [paginacao]);
 
-  console.log(paginacao);
-
   return (
-    <div className="flex items-center items-center justify-between">
+    <div className="flex items-center justify-between">
       <div className="flex gap-4">
         <Select
           className="mt-2"

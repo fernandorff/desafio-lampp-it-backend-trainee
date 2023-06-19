@@ -43,7 +43,6 @@ export default function useFuncionarioApi() {
       const response = await axiosInstance.post(`${path}`, request);
       return response.data;
     } catch (error) {
-      console.log(error);
     }
   }
 

@@ -18,7 +18,7 @@ public class VerificarOrdemAlfabeticaService {
         for (int i = 1; i < listaDePalavras.length; i++) {
             String palavraAtual = listaDePalavras[i];
 
-            if (verificarSeDuasPalavrasEstaoOrdenadas(palavraAtual.toLowerCase(), palavraAnterior.toLowerCase()) == false){
+            if (verificarSeDuasPalavrasEstaoOrdenadas(palavraAtual.toLowerCase(), palavraAnterior.toLowerCase()) == false) {
                 return false;
             }
 
@@ -35,9 +35,9 @@ public class VerificarOrdemAlfabeticaService {
             char caracterePalavraAtual = palavraAtual.charAt(i);
             char caracterePalavraAnterior = palavraAnterior.charAt(i);
 
-            if (caracterePalavraAtual < caracterePalavraAnterior){
+            if (caracterePalavraAtual < caracterePalavraAnterior) {
                 return false;
-            } else if (caracterePalavraAtual > caracterePalavraAnterior){
+            } else if (caracterePalavraAtual > caracterePalavraAnterior) {
                 return true;
             }
         }
