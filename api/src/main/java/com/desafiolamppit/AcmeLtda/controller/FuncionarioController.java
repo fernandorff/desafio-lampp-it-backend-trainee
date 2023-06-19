@@ -19,7 +19,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/funcionarios")
 @Tag(name = "Funcionário", description = "API para gerenciamento de funcionários")
-@CrossOrigin(origins = "https://desafio-lampp-it-backend-trainee.vercel.app/")
+@CrossOrigin(origins = "https://desafio-lampp-it-backend-trainee.vercel.app")
 public class FuncionarioController {
 
     @Autowired

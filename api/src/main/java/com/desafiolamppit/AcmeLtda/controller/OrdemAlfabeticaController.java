@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/ordem-alfabetica")
 @Tag(name = "Ordem Alfabetica", description = "API para verificar ordem alfabetica de uma lista de palavras")
-@CrossOrigin(origins = "https://desafio-lampp-it-backend-trainee.vercel.app/")
+@CrossOrigin(origins = "https://desafio-lampp-it-backend-trainee.vercel.app")
 public class OrdemAlfabeticaController {
 
     @Autowired
