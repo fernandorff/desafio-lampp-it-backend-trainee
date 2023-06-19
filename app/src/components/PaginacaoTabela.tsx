@@ -119,7 +119,8 @@ export default function PaginacaoTabela() {
           Mostrando
           <span className="mx-1 font-semibold text-gray-900 dark:text-white">
             {funcionarios.number * funcionarios.size + 1 || ""} -{" "}
-            {funcionarios.numberOfElements || ""}
+            {funcionarios.numberOfElements +
+              funcionarios.number * funcionarios.size || ""}
           </span>
           de
           <span className="mx-1 font-semibold text-gray-900 dark:text-white">

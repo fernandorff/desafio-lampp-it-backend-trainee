@@ -6,7 +6,7 @@ export default function App() {
   return (
     <>
       <Flowbite>
-        <div className="h-screen dark:bg-gray-900">
+        <div className="flex h-screen flex-col dark:bg-gray-900">
           <NavHeader />
           <div className="px-12 py-8 md:overflow-x-hidden">
             <Desafio />
