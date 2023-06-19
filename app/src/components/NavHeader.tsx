@@ -2,7 +2,7 @@ import { DarkThemeToggle, Navbar } from "flowbite-react";
 
 export default function NavHeader() {
   return (
-    <Navbar className="bg-gray-300">
+    <Navbar className="shadow">
       <Navbar.Brand>
         <img
           alt="Flowbite React Logo"
