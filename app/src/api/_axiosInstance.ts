@@ -1,6 +1,6 @@
 import axios, { AxiosInstance } from "axios";
 
-const ApiUrl: string = "http://localhost:3000";
+const ApiUrl: string = "https://desafio-lampp-it-backend-trainee.vercel.app/";
 
 const axiosInstance: AxiosInstance = axios.create({
   baseURL: ApiUrl,
