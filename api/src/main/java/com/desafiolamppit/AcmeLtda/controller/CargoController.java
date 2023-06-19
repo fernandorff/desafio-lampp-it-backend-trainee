@@ -13,7 +13,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/cargos")
 @Tag(name = "Cargo", description = "API para visualização de cargos (enum)")
-@CrossOrigin(origins = "https://desafio-lampp-it-backend-trainee.vercel.app")
+@CrossOrigin(origins = "*")
 public class CargoController {
 
     @Autowired
